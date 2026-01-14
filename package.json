@@ -1,0 +1,32 @@
+{
+  "name": "network-chaos",
+  "version": "1.0.0",
+  "description": "Chaos engineering for frontend network requests",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "network-chaos": "./bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "keywords": ["chaos", "network", "fetch", "xhr", "testing"],
+  "author": "Azad Yıldız <dev.azadyildiz@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azadyildiz/network-chaos.git"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
